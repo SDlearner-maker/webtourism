@@ -1,0 +1,35 @@
+/* Style the video: 100% width and height to cover the entire window. Reference from w3c schools */
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
+  
+  /* Add some content at the middle of the page */
+  .content {
+    position: fixed;
+    bottom: 100px;
+    background:rgba(147, 18, 221, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  /* Style the button used to pause/play the video */
+  #myBtn {
+    width: 50px;
+    font-size: 10px;
+    padding: 10px;
+    border: none;
+    background: rgba(221, 18, 113);
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  /*Color changes on hover*/
+  #myBtn:hover {
+    background: #ddd;
+    color: rgb(25, 24, 29);
+  }

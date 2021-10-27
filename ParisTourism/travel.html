@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylehome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      
+      /* Add a white background color with some padding */
+      body {
+        font-family: Arial;
+        background: #f1f1f1;
+      }
+      
+      /* Header */
+      .header {
+        padding: 30px;
+        /*font-size: 40px;*/
+        text-align: center;
+        background: rgb(219, 209, 116);
+      }
+      
+      /*Two unequal columns that floats next to each other */
+
+      /* Left column */
+      .leftcolumn {   
+        float: left;
+        width: 50%;
+        padding-right: 20px;
+      }
+      
+      /* Right column */
+      .rightcolumn {
+        float: right;
+        width: 50%;
+        padding-left: 20px;
+      }
+      
+      /* image classes */
+      .img1 {
+        background-color: #aaa;
+        width: 100%;
+        padding: 20px;        
+        background-image: url('images/paris1.jpg');
+        background-repeat: no-repeat;
+        background-size: 100%;
+      }
+      /* image */
+      .img2 {
+        background-color: #aaa;
+        width: 100%;
+        padding: 20px;        
+        background-image: url('images/arc.jpg');
+        background-repeat: no-repeat;
+        background-size: 100%;
+      }
+      /* image */
+      .img3 {
+        background-color: #aaa;
+        width: 100%;
+        padding: 20px;        
+        background-image: url('images/louvre.jpg');
+        background-repeat: no-repeat;
+        background-size: 100%;
+      }
+      /* image */
+      .img4 {
+        background-color: #aaa;
+        width: 100%;
+        padding: 20px;        
+        background-image: url('images/joan.jpg');
+        background-repeat: no-repeat;
+        background-size: 100%;
+      }
+      
+      /* Card effect for articles */
+      .card {
+         background-color: white;
+         padding: 20px;
+         margin-top: 20px;
+      }
+
+      
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      
+      /* Footer */
+      .footer {
+        padding: 20px;
+        text-align: center;
+        background: #ddd;
+        margin-top: 20px;
+      }
+      
+      /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 800px) {
+        .leftcolumn, .rightcolumn {   
+          width: 100%;
+          padding: 0;
+        }
+      }
+      </style>
+
+</head>
+<body>
+    <!--navigation bar-->
+    <div class="topnav">
+      <a href=index.html>Home</a>
+      <a class="active" href=travel.html>Travel</a>
+      <a href=transport.html>Transportation</a>
+      <a href=shopping.html>Shopping</a>
+      <a href=accommodation.html>Accommodation</a>
+      <a href=aboutcity.html>Know more</a>
+      <a href=history.html>History</a>  
+    </div>
+
+      <div class="header">
+        <h2><font size=20px>Make your travel easy</font></h2>
+        <p><font size= 5px>
+          We invite some popular bloggers and influencers to write about their experiences for us.
+        </br> This will help you understand more about Paris from a new-comer's persepctive, storytellers for you.
+        </font></p>
+        <i><blockquote cite="https://www.myglobalviewpoint.com/inspirational-travel-quotes/">
+          “Traveling – it leaves you speechless, then turns you into a storyteller” – Ibn Battuta</blockquote></i>
+      </div>
+      
+      <div class="row">
+        <div class="leftcolumn">
+          <div class="card">
+            <h2>Eiffel Tower- Your guide here</h2>
+            <h5>Jonathan Mathhew </br>Dec 7, 2017</br> <a href=eiffel.html>Read more</a></h5>
+            
+            <div class="img1" style="height:200px;"></div>
+            <p>One of the seven wonders of the world, Eiffel Tower is a sure to attend sites.</p>
+          </div>
+          <div class="card">
+            <h2>Arc de Triump</h2>
+            <h5>Jill Chan </br>Feb 27, 2016</br> <a href=arc.html>Read more</a></h5>
+            <div class="img2" style="height:200px;"></div>
+            <p>For history lovers, do visit this wonderful site.</p>
+          </div>
+
+        </div>
+
+        <div class="rightcolumn">
+          <div class="card">
+            <h2>Louvre Museum- Larger than you think</h2>
+            <h5>Brian Mugabe </br>Sep 9, 2018</br> <a href=louvre.html>Read more</a></h5>
+            <div class="img3" style="height:200px;"></div>
+            <p>Lovre Museum is the ultimate place for artists.</p>
+          </div>
+          <div class="card">
+            <h2>Joan of Arc- An unltimate tale of a warrior</h2>
+            <h5>Mark Parkinson </br>Jan 7, 2018</br> <a href=joan.html>Read more</a></h5>
+            <div class="img4" style="height:200px;"></div>
+            
+            <p>Know about the historical warrior Joan of Arc, a female warrior who sacrificed 
+              her comfort and life for her nation, as her calling to save the nation.
+            </p>
+          </div>
+
+        </div>
+        
+        </div>
+      
+      <!--footer showing lnks to follow in social media-->
+      <div class="footer">
+        <h2>Follow us on </h2>
+        <p><i class="fa fa-instagram" style="font: size 10px"><a href="https://www.instagram.com/paris_tourism/">Instagram</i></a></p>        
+        <p><i class="fa fa-facebook" style="font: size 10px"><a href="https://www.facebook.com/p.infos/">Facebook</i></a></p>  
+        <p><i class="fa fa-twitter" style="font: size 10px"><a href="https://twitter.com/ParisJeTaime?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">Twitter</i></a></p>  
+      </div>
+</body>
+</html>

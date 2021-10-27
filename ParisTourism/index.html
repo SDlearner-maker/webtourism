@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--access the css files-->
+    <link rel="stylesheet" href="stylehome.css">
+    <link rel="stylesheet" href="videoplayer.css">
+    
+    
+    <style></style>
+</head>
+<body>
+    <!--navigation bar-->
+    <div class="topnav">
+      <a class="active" href=index.html>Home</a>
+      <a href=travel.html>Travel</a>
+      <a href=transport.html>Transportation</a>
+      <a href=shopping.html>Shopping</a>
+      <a href=accommodation.html>Accommodation</a>
+      <a href=aboutcity.html>Know more</a>  
+      <a href=history.html>History</a>  
+    </div>
+      
+    
+    <!--Video playing in background-->
+    
+    <!--credit for the video https://www.pexels.com/@christopher-james-emerson-1668796-->
+    <video autoplay muted loop id="myVideo">
+      <source src="images/parisvideo.mp4" type="video/mp4">
+      
+    </video>
+    
+     <!--Written content-->
+    <div class="content">
+      <h1><b> <font size=10px>Bonjour! Welcome to Paris!</font></b></h1>
+      <p> <font size= 5px>
+        Welcome to the city of lights and fashion capital. </br> If you are a tourist or a would-to-be tourist
+        who wants to visit Paris, you are at the right place. </font> </br></br>
+        <i>Press the button below to pause/play the video</i>
+      </p>
+
+      <!--Button to play/pause video-->
+      <button id="myBtn" onclick="myFunction()">Pause</button>
+
+      <!--javascript file for play/pause video-->
+      <script src="videoplayer.js"></script>
+    </div>
+    
+</body>
+</html>

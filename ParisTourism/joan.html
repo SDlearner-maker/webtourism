@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylehome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      
+      /* Add a white background color with some padding */
+      body {
+        font-family: Arial;
+        background: #f1f1f1;
+      }     
+            
+      /*Two unequal columns that floats next to each other */
+
+      /* Left column */
+      .leftcolumn {   
+        float: left;
+        width: 100%;
+        padding-right: 20px;
+      }
+     
+      /*Image classes*/
+      .img1 {
+        background-color: #aaa;
+        width: 50%;
+        padding: 20px;
+        background-image: url('images/joan.jpg');
+        background-repeat: no-repeat;
+        background-size: 100%;
+      }
+      
+      /* Card effect for articles */
+      .card {
+         background-color: rgb(175, 223, 224);
+         padding: 20px;
+         margin-top: 20px;
+      }
+
+      
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      
+      /* Footer */
+      .footer {
+        padding: 20px;
+        text-align: center;
+        background: #ddd;
+        margin-top: 20px;
+      }
+      
+      /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 800px) {
+        .leftcolumn, .rightcolumn {   
+          width: 100%;
+          padding: 0;
+        }
+      }
+      </style>
+
+</head>
+<body>
+    <!--navigation bar-->
+    <div class="topnav">
+      <a href=index.html>Home</a>
+      <a href=travel.html>Travel</a>
+      <a href=transport.html>Transportation</a>
+      <a href=shopping.html>Shopping</a>
+      <a class="active" href=accommodation.html>Accommodation</a>
+      <a href=aboutcity.html>Know more</a>
+      <a href=history.html>History</a>  
+    </div>
+
+      <div class="header">
+        
+      
+      <div class="row">
+        <div class="leftcolumn">
+          
+            <div class="card">
+              
+               <h2>Joan de Arc
+                   </br><h5><a href=travel.html><i>Go back to Travel page</i></a></h5>
+               </h2>
+               <div class="img1" style="height:200px;"></div>
+               <p>She is countes as one of the bravest female warriors of the world.</p>                
+               <p>When she was young, she had a dream that she must save her nation from the traitors.
+                   She had sacrificed her simple life to save her nation. Many tourists who are 
+                   interested in hhistory specially come here to take pictures and inquire more about this 
+                   brave warrior. The Joan of Arc statue was built to pay her respect.
+               </p>                  
+               
+              
+            </div>
+        
+      </div>
+        
+      </div>
+      
+      
+      
+</body>
+</html>

@@ -1,0 +1,31 @@
+/* Add an indigo background color to the top navigation */
+.topnav {
+    background-color:indigo;
+    overflow: hidden;
+    position:sticky;
+    z-index: 5;
+    font-family:Arial, Helvetica, sans-serif;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 20px 20px;
+    text-decoration:none;
+    font-size:20px;
+  }
+  
+  
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color:brown;
+    color: white;
+  }
+
+  /*If not hovering, then color is different as mentioned below*/
+  .topnav a:hover:not(.active){
+    background-color:rgb(102, 9, 87);
+}

@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+    
+  }
+  .row {
+    margin-left:-5px;
+    margin-right:-5px;
+  }
+    
+  .column {
+    float: left;
+    width: 50%;
+    padding: 5px;
+  }
+  
+  /* Clearfix (clear floats) */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  
+  table {
+    /*border-collapse: collapse;*/
+    border-spacing: 0;
+    width: 100%;
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 16px;
+    border: 1px solid rgb(27, 26, 26);
+  }
+  
+   /* Header Title */
+   .header {
+    padding: 60px;
+    text-align: center;
+    background: #1abc9c;
+    color: black;
+    font-size: 30px;
+    background-image: url(images/busmap.jpg), url(images/paris1.jpg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: left, right;
+    background-size: 50%, 100%;
+  }
+
+  .content{
+      background-color: wheat;
+      padding-bottom: 5px;
+  }
+
+  /*table*/
+  table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+  

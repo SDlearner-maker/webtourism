@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylehome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      
+      /* Add a white background color with some padding */
+      body {
+        font-family: Arial;
+        background: #f1f1f1;
+      }     
+      
+      /* Two unequal columns that floats next to each other */
+
+      /* Left column */
+      .leftcolumn {   
+        float: left;
+        width: 100%;
+        padding-right: 20px;
+      }
+     
+      /*Image classes*/
+      .img1 {
+        background-color: #aaa;
+        width: 50%;
+        padding: 150px;
+        background-image: url('images/history.jpg');
+        background-repeat: no-repeat;
+        background-size: 100%;
+      }
+      
+      /*Card effect for articles */
+      .card {
+         background-color: rgb(175, 223, 224);
+         padding: 20px;
+         margin-top: 20px;
+      }
+
+      
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      
+      /* Footer */
+      .footer {
+        padding: 20px;
+        text-align: center;
+        background: #ddd;
+        margin-top: 20px;
+      }
+      
+      /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 800px) {
+        .leftcolumn, .rightcolumn {   
+          width: 100%;
+          padding: 0;
+        }
+      }
+      </style>
+
+</head>
+<body>
+    <!--navigation bar-->
+    <div class="topnav">
+      <a href=index.html>Home</a>
+      <a href=travel.html>Travel</a>
+      <a href=transport.html>Transportation</a>
+      <a href=shopping.html>Shopping</a>
+      <a href=accommodation.html>Accommodation</a>
+      <a href=aboutcity.html>Know more</a>
+      <a class="active" href=history.html>History</a>  
+    </div>
+
+      <div class="header">
+        
+      
+      <div class="row">
+        <div class="leftcolumn">
+          
+            <div class="card">
+              
+               <h2>History of Paris and more
+                   
+               </h2>
+               <div class="img1" style="height:200px;"></div>
+               <!--content-->
+               <p>Paris is the capital city of France.</p>                
+               <p>It is also known as the city of lights. It is the most famous destination for
+                   fashion in the world. The people here are known as Parisians.
+                   <!--Information from Wikipedia about history of Paris-->
+                   <blockquote cite="https://en.wikipedia.org/wiki/History_of_Paris">The oldest traces of human occupation in Paris, discovered in 2008 near the Rue Henri-Farman in the 15th arrondissement, are human bones and evidence of an encampment of hunter-gatherers dating from about 8000 BC, during the Mesolithic period.[1] Between 250 and 225 BC, the Parisii, a sub-tribe of the Celtic Senones, settled on the banks of the Seine, built bridges and a fort, minted coins, and began to trade with other river settlements in Europe.[2]
+
+                    In 52 BC, a Roman army led by Titus Labienus defeated the Parisii and established a Gallo-Roman garrison town called Lutetia.[3] The town was Christianised in the 3rd century AD, and after the collapse of the Roman Empire, it was occupied by Clovis I, the King of the Franks, who made it his capital in 508.
+                    
+                    During the Middle Ages, Paris was the largest city in Europe, an important religious and commercial centre, and the birthplace of the Gothic style of architecture. The University of Paris on the Left Bank, organised in the mid-13th century, was one of the first in Europe. It suffered from the Bubonic Plague in the 14th century and the Hundred Years' War in the 15th century, with recurrence of the plague. Between 1418 and 1436, the city was occupied by the Burgundians and English soldiers. In the 16th century, Paris became the book-publishing capital of Europe, though it was shaken by the French Wars of Religion between Catholics and Protestants. In the 18th century, Paris was the centre of the intellectual ferment known as the Enlightenment, and the main stage of the French Revolution from 1789, which is remembered every year on the 14th of July with a military parade.
+                    
+                    In the 19th century, Napoleon embellished the city with monuments to military glory. It became the European capital of fashion and the scene of two more revolutions (in 1830 and 1848). Under Napoleon III and his Prefect of the Seine, Georges-Eugène Haussmann, the centre of Paris was rebuilt between 1852 and 1870 with wide new avenues, squares and new parks, and the city was expanded to its present limits in 1860. In the latter part of the century, millions of tourists came to see the Paris International Expositions and the new Eiffel Tower.
+                    
+                    In the 20th century, Paris suffered bombardment in World War I and German occupation from 1940 until 1944 in World War II. Between the two wars, Paris was the capital of modern art and a magnet for intellectuals, writers and artists from around the world. The population reached its historic high of 2.1 million in 1921, but declined for the rest of the century. New museums (The Centre Pompidou, Musée Marmottan Monet and Musée d'Orsay) were opened, and the Louvre given its glass pyramid.
+                    
+                    In the 21st century, Paris added new museums and a new concert hall, but in 2005 it also experienced violent unrest in the housing projects in the surrounding banlieues (suburbs), inhabited largely by first and second generation immigrants from France's former colonies in the Maghreb and Sub-Saharan Africa. In 2015, the city and the nation were shocked by two deadly terrorist attacks carried out by Islamic extremists. The population of the city declined steadily from 1921 until 2004, due to a decrease in family size and an exodus of the middle class to the suburbs; but it is increasing slowly once again, as young people and immigrants move into the city.</blockquote>
+               </p>                  
+               
+              
+            </div>
+        
+      </div>
+        
+      </div>
+      
+      
+      
+</body>
+</html>

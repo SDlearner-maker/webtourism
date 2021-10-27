@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylehome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      
+      /* Add a white background color with some padding */
+      body {
+        font-family: Arial;
+        background: #f1f1f1;
+      }
+      
+      /* Header */
+      .header {
+        padding: 30px;
+        text-align: center;
+        background: rgb(112, 79, 6);
+      }
+      .header{
+        color:#f1f1f1;
+      }
+    
+      /* Two unequal columns that floats next to each other */
+
+      /* Left column */
+      .leftcolumn {   
+        float: left;
+        width: 100%;
+        padding-right: 20px;
+      } 
+
+      /*Image classes*/
+      .img1 {
+        background-color: #aaa;
+        width: 50%;
+        padding: 20px;
+        background-image: url('images/shop1.jpg');
+        background-repeat: no-repeat;
+        background-size: 100%;
+      }
+      .img2 {
+        background-color: #aaa;
+        width: 50%;
+        padding: 20px;
+        background-image: url('images/shop2.jpg');
+        background-repeat: no-repeat;
+        background-size: 100%;
+      }
+      .img3 {
+        background-color: #aaa;
+        width: 50%;
+        padding: 20px;
+        background-image: url('images/shop3.jpg');
+        background-repeat: no-repeat;
+        background-size: 100%;
+      }
+      .img4 {
+        background-color: #aaa;
+        width: 50%;
+        padding: 20px;
+        background-image: url('images/shop4.jpg');
+        background-repeat: no-repeat;
+        background-size: 100%;
+      }
+      .img5 {
+        background-color: #aaa;
+        width: 50%;
+        padding: 20px;
+        background-image: url('images/shop5.jpg');
+        background-repeat: no-repeat;
+        background-size: 100%;
+      }
+      
+      /*Card effect for articles */
+      .card {
+         background-color: rgb(210, 236, 200);
+         padding: 20px;
+         margin-top: 20px;
+      }
+
+      
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      
+      /* Footer */
+      .footer {
+        padding: 20px;
+        text-align: center;
+        background: #ddd;
+        margin-top: 20px;
+      }
+      
+      /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 800px) {
+        .leftcolumn, .rightcolumn {   
+          width: 100%;
+          padding: 0;
+        }
+      }
+      </style>
+
+</head>
+<body>
+    <!--navigation bar-->
+    <div class="topnav">
+      <a href=index.html>Home</a>
+      <a href=travel.html>Travel</a>
+      <a href=transport.html>Transportation</a>
+      <a class="active" href=shopping.html>Shopping</a>
+      <a href=accommodation.html>Accommodation</a>
+      <a href=aboutcity.html>Know more</a>
+      <a href=history.html>History</a>  
+    </div>
+
+      <div class="header">
+        <h2><font size=20px>Best 5 shops for must visit</font></h2>
+        <p><font size= 5px>
+          Curated content for you to explore the top 5 shops at Paris, 
+        </br> as a part of promotion of emerging shops for tourists.
+        </font></p>
+        <i><font size="2px">Sponsored by Swiggy</font></i>
+      </div>
+      
+      <div class="row">
+        <div class="leftcolumn">
+          <ol>
+            <div class="card">
+              <li>
+               <h2>Shop 1</h2>
+               <div class="img1" style="height:200px;"></div>
+               <p>This shop is well known for providing fresh food products and all kinds
+                 of groceries. Also, enjoy exclusive discounts on buying more.
+                 </br> You can buy:
+                 <ul>
+                   <li>Groceries</li>
+                   <li>Milk products</li>
+                   <li>Stationery</li>
+                   <li>Meat</li>
+                   <li>Vegetables</li>
+                   <li>Electronics</li>
+                   and many more...
+                 </ul>
+                 
+               </p>                
+               
+              </li>
+            </div>
+            <div class="card">
+              <li>
+               <h2>Shop 2</h2>
+               
+               <div class="img2" style="height:200px;"></div>
+               <p> The shop is located in an area with other new shops. Nevertheless, it still is the 
+                 most preferred one for clothes. For those interested in fashion, this shop is for you.
+               </p>
+               
+              </li>
+            </div>
+            <div class="card">
+              <li>
+               <h2>Shop 3</h2>
+               
+               <div class="img3" style="height:200px;"></div>
+               <p> For those interested in history and old books, this shop is a must visit. 
+                 The best literature workd by renowned French authors is collected here and you
+                 must read at the shop only. Only copies of original books are rented. You will also 
+                 discover about the history of Paris too.
+               </p>
+              </li>
+            </div>
+            <div class="card">
+              <li>
+               <h2>Shop 4</h2>
+               
+               <div class="img4" style="height:200px;"></div>
+               <p>If you have kids coming with you, this is a must visit shop. You can buy kids toys, special
+                 discounts for tourists. You can also buy interesting and latest stationery items too,
+                 if you are a fan.
+               </p>
+              </li>
+            </div>
+            <div class="card">
+              <li>
+               <h2>Shop 5</h2>
+               
+               <div class="img5" style="height:200px;"></div>
+               <p> This shop is a must visit for sports fans. One can find multiple varieties of brands.
+                 Though this shop is known for latest brands manufactured in France, but there are discounts
+                 applied too.
+               </p>
+              </li>
+            </div>
+        </ol>
+      </div>
+        
+      </div>
+      
+      <!--footer-->
+      <div class="footer">
+        <h2>Follow us on </h2>
+        <p><i class="fa fa-instagram" style="font: size 10px"><a href="https://www.instagram.com/paris_tourism/">Instagram</i></a></p>        
+        <p><i class="fa fa-facebook" style="font: size 10px"><a href="https://www.facebook.com/p.infos/">Facebook</i></a></p>  
+        <p><i class="fa fa-twitter" style="font: size 10px"><a href="https://twitter.com/ParisJeTaime?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">Twitter</i></a></p>  
+      </div>
+</body>
+</html>

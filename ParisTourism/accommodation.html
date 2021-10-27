@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylehome.css">
+    <!--refer to font awesome 4 icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      
+      /* Add a white background color */
+      body {
+        font-family: Arial;
+        background: #f1f1f1;
+      }
+      
+      /* Header*/
+      .header {
+        padding: 30px;
+        text-align: center;
+        background: rgb(196, 79, 170);
+      }
+      
+      /* Two unequal columns that floats next to each other */
+
+      /* Left column */
+      .leftcolumn {   
+        float: left;
+        width: 100%;
+        padding-right: 20px;
+      }
+
+      /* Image classes */
+      .img1 {
+        background-color: #aaa;
+        width: 50%;
+        padding: 20px;
+        background-image: url('images/hotel1.jpg');
+        background-repeat: no-repeat;
+        background-size: 100%;
+      }
+      .img2 {
+        background-color: #aaa;
+        width: 50%;
+        padding: 20px;
+        background-image: url('images/hotel2.jpg');
+        background-repeat: no-repeat;
+        background-size: 100%;
+      }
+      .img3 {
+        background-color: #aaa;
+        width: 50%;
+        padding: 20px;
+        background-image: url('images/hotel3.jpg');
+        background-repeat: no-repeat;
+        background-size: 100%;
+      }
+      .img4 {
+        background-color: #aaa;
+        width: 50%;
+        padding: 20px;
+        background-image: url('images/hotel4.jpg');
+        background-repeat: no-repeat;
+        background-size: 100%;
+      }
+      .img5 {
+        background-color: #aaa;
+        width: 50%;
+        padding: 20px;
+        background-image: url('images/hotel5.jpg');
+        background-repeat: no-repeat;
+        background-size: 100%;
+      }
+      
+      /* Card effect for content */
+      .card {
+         background-color: rgb(175, 223, 224);
+         padding: 20px;
+         margin-top: 20px;
+      }
+
+      
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      
+      /* Footer */
+      .footer {
+        padding: 20px;
+        text-align: center;
+        background: #ddd;
+        margin-top: 20px;
+      }
+      
+      /* Responsive layout - when the screen is less than 800px wide, 
+      make the two columns stack on top of each other instead of next to each other
+      reference- w3c schools */
+      @media screen and (max-width: 800px) {
+        .leftcolumn, .rightcolumn {   
+          width: 100%;
+          padding: 0;
+        }
+      }
+      </style>
+
+</head>
+<body>
+    <!--navigation bar-->
+    <div class="topnav">
+      <a href=home.html>Home</a>
+      <a href=travel.html>Travel</a>
+      <a href=transport.html>Transportation</a>
+      <a href=shopping.html>Shopping</a>
+      <a class="active" href=accommodation.html>Accommodation</a>
+      <a href=aboutcity.html>Know more</a>
+      <a href=history.html>History</a>  
+    </div>
+
+    <!--Top header-->
+
+      <div class="header">
+        <h2><font size=20px>Best 5 hotels to stay in Paris</font></h2>
+        <p><font size= 5px>
+          Curated content for you to select between top 5 hotels at Paris, 
+        </br> as a part of promotion of new-age living spaces.
+        </font></p>
+        <i><font size="2px">Sponsored by Thomas Cook</font></i>
+      </div>
+      
+      <!--List of hotels-->
+      <div class="row">
+        <div class="leftcolumn">
+          <ol>
+            <!--first hotel-->
+            <div class="card">
+              <li>
+               <h2>Hotel 1</h2>
+               <!--image class size-->
+               <div class="img1" style="height:200px;"></div>
+               <p>One of the best hotels, this is preferred by most of the tourists due to its proximity
+                 to the Eiffel tower. The charge per night is around 70 pounds per head. Good news is that there are
+                discounts available for children too.</p>                
+               
+               
+              </li>
+            </div>
+            <div class="card">
+              <li>
+                <!--second hotel-->
+               <h2>Hotel 2</h2>
+               
+               <div class="img2" style="height:200px;"></div>
+               <p>This hotel is famous among young parents with kids because of its latest interior design
+                 for the modern age as well as there are many facilities for kids. Parents can relax as their
+                 kids can spend their whole time in kids play area, with trained staff to handle and care. 
+               </p>
+               
+              </li>
+            </div>
+            <!--third hotel-->
+            <div class="card">
+              <li>
+               <h2>Hotel 3</h2>
+               
+               <div class="img3" style="height:200px;"></div>
+               <p>This hotel is for those who want to have a luxurious stay. There are facilities like
+                 gymnasium, table tennis court, billiards table and a spa.
+               </p>
+              
+              </li>
+            </div>
+            <!--fourth hotel-->
+            <div class="card">
+              <li>
+               <h2>Hotel 4</h2>
+               
+               <div class="img4" style="height:200px;"></div>
+               <p>If you want to see the sight of river early morning, then this hotelis the best choice for you. 
+                 You can spend your morning with a nice walk by the river.
+               </p>
+               
+              </li>
+            </div>
+            <!--fifth hotel-->
+            <div class="card">
+              <li>
+               <h2>Hotel 5</h2>
+               
+               <div class="img5" style="height:200px;"></div>
+               <p>If you want to be in the middle of the city and experience the rush, this is the best
+                 fit for you. You can have easy access to many shops, restaurants, hospitals, clubs and transportation services.
+               </p>
+               
+              </li>
+            </div>
+        </ol>
+      </div>
+        
+      </div>
+      
+      <!--Footer to show links to social media pages-->
+      <div class="footer">
+        <h2>Follow us on </h2>
+        <p><i class="fa fa-instagram" style="font: size 10px"><a href="https://www.instagram.com/paris_tourism/">Instagram</i></a></p>        
+        <p><i class="fa fa-facebook" style="font: size 10px"><a href="https://www.facebook.com/p.infos/">Facebook</i></a></p>  
+        <p><i class="fa fa-twitter" style="font: size 10px"><a href="https://twitter.com/ParisJeTaime?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">Twitter</i></a></p>  
+      </div>
+</body>
+</html>
